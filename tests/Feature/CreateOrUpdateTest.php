@@ -18,7 +18,7 @@
             parent::setUp();
             //do awesome thing
         }
-/*
+
         public function testPhoneNotSet()
         {
             $ch = curl_init('https://core.codepr.ru/api/v2/crm/user_create_or_update');
@@ -81,7 +81,7 @@
             curl_close($ch);
             $this->assertEquals($info["http_code"], 200);
         }
-*/
+
         public function testLink()
         {
             $ch = curl_init('https://core.codepr.ru/api/v2/crm/user_create_or_update');
@@ -106,7 +106,7 @@
 
              $card_url=$array["card_url"];
 
-             var_dump($card_url);
+       //      var_dump($card_url);
             //тест download card
 
             $ch = curl_init($card_url);
